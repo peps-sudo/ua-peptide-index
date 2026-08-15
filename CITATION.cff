@@ -12,6 +12,7 @@ authors:
     website: "https://peps.co.ua"
 version: "2026.08"
 date-released: "2026-08-15"
+doi: 10.5281/zenodo.21957084
 license: CC-BY-4.0
 url: "https://peps.co.ua/price-index"
 repository-code: "https://github.com/peps-sudo/ua-peptide-index"
@@ -21,4 +22,3 @@ keywords:
   - Ukraine
   - open data
   - research-grade
-# doi: 10.5281/zenodo.XXXXXXX   # filled in after the first Zenodo release
