@@ -18,22 +18,28 @@ reproducible research data: real prices from real storefronts, never invented or
 > covers research-grade compounds only; registered medicines (GLP-1 pens such as Mounjaro, Ozempic,
 > Wegovy, Zepbound) are **excluded** from the index. See [`METHODOLOGY.md`](METHODOLOGY.md).
 
+> 🧪 **Alpha (v2).** The aggregation was reworked to remove a frequency bias, but the improvement is
+> so far confirmed on **2 of 24 molecules** (retatrutide, tirzepatide). Other values are
+> **preliminary**. A formal, fully-validated release follows a ≥500-SKU check. Open limitations are
+> listed honestly in [`METHODOLOGY.md`](METHODOLOGY.md).
+
 ## What's inside
 
 | File | What it is | Coverage |
 |---|---|---|
-| [`data/ua-peptide-price-index-2026-08.csv`](data/ua-peptide-price-index-2026-08.csv) | Monthly snapshot per molecule × dose (`min` / `median` / `max`, shops, offers) | 52 rows · 23 molecules · Aug 2026 |
-| [`data/ua-peptide-price-index-2026-08.json`](data/ua-peptide-price-index-2026-08.json) | Same snapshot with a `meta` block (period, generation date, source-row / kept / dropped counts) | — |
-| [`data/ua-peptide-price-history-weekly.json`](data/ua-peptide-price-history-weekly.json) | Daily time series per molecule (`p25` / `median` / `p75`, robust) | 924 rows · 24 molecules · 2026-06-07 → 2026-08-14 |
-| [`METHODOLOGY.md`](METHODOLOGY.md) | Full method: source, unit, aggregation, what is excluded and why, robustness, limitations (Ukrainian) | — |
+| [`data/ua-peptide-price-index-current.csv`](data/ua-peptide-price-index-current.csv) | Current snapshot: last known state per molecule (`p25` / `median` / `p75`, suppliers) | 24 molecules · as of 2026-08-15 |
+| [`data/ua-peptide-price-index-current.json`](data/ua-peptide-price-index-current.json) | Same snapshot with a `meta` block | — |
+| [`data/ua-peptide-price-history-weekly.json`](data/ua-peptide-price-history-weekly.json) | Daily time series per molecule (`p25` / `median` / `p75`) | 1328 rows · 24 molecules · 2026-06-07 → 2026-08-15 |
+| [`METHODOLOGY.md`](METHODOLOGY.md) | Full v2 method, exclusions, and honest alpha limitations (Ukrainian) | — |
 
-**Unit:** UAH per 1 mg. **Currency:** UAH. **Aggregation:** per molecule (× dose in the monthly
-snapshot) across shops; a row is published only with **≥3 shops** so the median is meaningful.
-Only in-stock, fixed-price, research-grade listings enter the index.
+**Unit:** UAH per 1 mg. **Currency:** UAH. **Method (v2):** one price-state per shop per day (the
+shop's cheapest UAH/mg), then `p25` / `median` / `p75` **across shops**; a day is published only with
+**≥2 shops**. Both files derive from one v2 source (one method). Only in-stock, research-grade
+listings enter the index; per-dose breakdown is temporarily withheld until its method is aligned.
 
 ## How to cite
 
-> *Ukraine Peptide Price Index* (Version 2026.08) [Data set]. peps.co.ua, 2026.
+> *Ukraine Peptide Price Index* (v2, alpha) [Data set]. peps.co.ua, 2026.
 > CC-BY-4.0. https://doi.org/10.5281/zenodo.21957084
 
 DOI (all versions): [**10.5281/zenodo.21957084**](https://doi.org/10.5281/zenodo.21957084).

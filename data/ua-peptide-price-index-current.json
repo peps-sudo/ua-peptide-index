@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "dataset": "Ukraine Peptide Price Index — current snapshot",
+    "description": "Останній відомий стан по кожній молекулі: медіана грн/мг серед магазинів (у магазину береться найдешевша доза). Alpha.",
+    "as_of": "2026-08-15",
+    "generated_from": "ua-peptide-price-history-weekly.json",
+    "source": "https://peps.co.ua",
+    "license": "CC-BY-4.0",
+    "unit": "UAH per mg",
+    "currency": "UAH",
+    "measure": "min price/mg per supplier (cheapest dose)",
+    "stat": "p25 / median / p75 across suppliers",
+    "method": "per-supplier daily state, carry-forward, in_stock tombstone",
+    "registered_drugs_excluded": true,
+    "status": "alpha — validated on 2 of 24 molecules; other values preliminary (see METHODOLOGY.md)",
+    "peptides": 24
+  },
+  "data": [
+    {
+      "peptide": "sermorelin",
+      "as_of": "2026-08-15",
+      "suppliers": 3,
+      "p25": 765,
+      "median": 1260,
+      "p75": 1260
+    },
+    {
+      "peptide": "semaglutide",
+      "as_of": "2026-08-15",
+      "suppliers": 18,
+      "p25": 864,
+      "median": 1192,
+      "p75": 1386
+    },
+    {
+      "peptide": "cagrilintide",
+      "as_of": "2026-08-15",
+      "suppliers": 10,
+      "p25": 663,
+      "median": 780,
+      "p75": 825
+    },
+    {
+      "peptide": "retatrutide",
+      "as_of": "2026-08-15",
+      "suppliers": 28,
+      "p25": 371,
+      "median": 625,
+      "p75": 775
+    },
+    {
+      "peptide": "tesamorelin",
+      "as_of": "2026-08-15",
+      "suppliers": 3,
+      "p25": 590,
+      "median": 620,
+      "p75": 960
+    },
+    {
+      "peptide": "tirzepatide",
+      "as_of": "2026-08-15",
+      "suppliers": 37,
+      "p25": 406,
+      "median": 533,
+      "p75": 732
+    },
+    {
+      "peptide": "bpc-157",
+      "as_of": "2026-08-15",
+      "suppliers": 19,
+      "p25": 182,
+      "median": 520,
+      "p75": 740
+    },
+    {
+      "peptide": "mots-c",
+      "as_of": "2026-08-15",
+      "suppliers": 23,
+      "p25": 325,
+      "median": 420,
+      "p75": 436
+    },
+    {
+      "peptide": "selank",
+      "as_of": "2026-08-15",
+      "suppliers": 6,
+      "p25": 372,
+      "median": 385,
+      "p75": 385
+    },
+    {
+      "peptide": "pt-141",
+      "as_of": "2026-08-15",
+      "suppliers": 7,
+      "p25": 117,
+      "median": 370,
+      "p75": 383
+    },
+    {
+      "peptide": "tb-500",
+      "as_of": "2026-08-15",
+      "suppliers": 19,
+      "p25": 274,
+      "median": 290,
+      "p75": 666
+    },
+    {
+      "peptide": "cjc-1295",
+      "as_of": "2026-08-15",
+      "suppliers": 18,
+      "p25": 230,
+      "median": 288,
+      "p75": 451
+    },
+    {
+      "peptide": "ipamorelin",
+      "as_of": "2026-08-15",
+      "suppliers": 19,
+      "p25": 116,
+      "median": 225,
+      "p75": 375
+    },
+    {
+      "peptide": "aod-9604",
+      "as_of": "2026-08-15",
+      "suppliers": 4,
+      "p25": 175,
+      "median": 218,
+      "p75": 267
+    },
+    {
+      "peptide": "hexarelin",
+      "as_of": "2026-08-15",
+      "suppliers": 5,
+      "p25": 95,
+      "median": 206,
+      "p75": 240
+    },
+    {
+      "peptide": "hgh-176-191",
+      "as_of": "2026-08-15",
+      "suppliers": 11,
+      "p25": 142,
+      "median": 198,
+      "p75": 640
+    },
+    {
+      "peptide": "epitalon",
+      "as_of": "2026-08-15",
+      "suppliers": 18,
+      "p25": 106,
+      "median": 185,
+      "p75": 200
+    },
+    {
+      "peptide": "semax",
+      "as_of": "2026-08-15",
+      "suppliers": 6,
+      "p25": 135,
+      "median": 140,
+      "p75": 140
+    },
+    {
+      "peptide": "melanotan-2",
+      "as_of": "2026-08-15",
+      "suppliers": 10,
+      "p25": 73,
+      "median": 97,
+      "p75": 350
+    },
+    {
+      "peptide": "ghrp-2",
+      "as_of": "2026-08-15",
+      "suppliers": 11,
+      "p25": 62,
+      "median": 67,
+      "p75": 84
+    },
+    {
+      "peptide": "ghrp-6",
+      "as_of": "2026-08-15",
+      "suppliers": 13,
+      "p25": 62,
+      "median": 67,
+      "p75": 198
+    },
+    {
+      "peptide": "ghk-cu",
+      "as_of": "2026-08-15",
+      "suppliers": 20,
+      "p25": 37,
+      "median": 40,
+      "p75": 42
+    },
+    {
+      "peptide": "5-amino-1mq",
+      "as_of": "2026-08-15",
+      "suppliers": 4,
+      "p25": 34,
+      "median": 39,
+      "p75": 40
+    },
+    {
+      "peptide": "nad-plus",
+      "as_of": "2026-08-15",
+      "suppliers": 4,
+      "p25": 28,
+      "median": 34,
+      "p75": 39
+    }
+  ]
+}
