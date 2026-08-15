@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="904" viewBox="0 0 900 904" font-family="'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif">
+  <rect width="900" height="904" fill="#ffffff"/>
+  <text x="140" y="30" font-size="19" font-weight="800" fill="#1e293b">Ukraine Peptide Price Index</text>
+  <text x="140" y="52" font-size="13" fill="#64748b">Median price, UAH per mg · research-grade · 24 molecules · 2026-06-07 → 2026-08-14</text>
+  <line x1="150" y1="66" x2="820" y2="66" stroke="#e2e8f0"/>
+  
+  <text x="140" y="91" text-anchor="end" font-size="12.5" fill="#1f6f63" font-weight="700">Semaglutide</text>
+  <rect x="150" y="78" width="670" height="18" rx="3" fill="#1f6f63" opacity="0.95"/>
+  <text x="828" y="91" font-size="12" fill="#64748b" font-weight="600">1078</text>
+  <text x="140" y="123" text-anchor="end" font-size="12.5" fill="#1f6f63" font-weight="700">Retatrutide</text>
+  <rect x="150" y="110" width="621.52133580705" height="18" rx="3" fill="#1f6f63" opacity="0.95"/>
+  <text x="779.52133580705" y="123" font-size="12" fill="#64748b" font-weight="600">1000</text>
+  <text x="140" y="155" text-anchor="end" font-size="12.5" fill="#1e293b" >Tesamorelin</text>
+  <rect x="150" y="142" width="578.0148423005567" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="736.0148423005567" y="155" font-size="12" fill="#64748b" font-weight="600">930</text>
+  <text x="140" y="187" text-anchor="end" font-size="12.5" fill="#1e293b" >Cagrilintide</text>
+  <rect x="150" y="174" width="512.7551020408163" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="670.7551020408163" y="187" font-size="12" fill="#64748b" font-weight="600">825</text>
+  <text x="140" y="219" text-anchor="end" font-size="12.5" fill="#1e293b" >Sermorelin</text>
+  <rect x="150" y="206" width="475.4638218923933" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="633.4638218923933" y="219" font-size="12" fill="#64748b" font-weight="600">765</text>
+  <text x="140" y="251" text-anchor="end" font-size="12.5" fill="#1f6f63" font-weight="700">Tirzepatide</text>
+  <rect x="150" y="238" width="299.57328385899814" height="18" rx="3" fill="#1f6f63" opacity="0.95"/>
+  <text x="457.57328385899814" y="251" font-size="12" fill="#64748b" font-weight="600">482</text>
+  <text x="140" y="283" text-anchor="end" font-size="12.5" fill="#1e293b" >Mots-C</text>
+  <rect x="150" y="270" width="264.1465677179963" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="422.1465677179963" y="283" font-size="12" fill="#64748b" font-weight="600">425</text>
+  <text x="140" y="315" text-anchor="end" font-size="12.5" fill="#1e293b" >Selank</text>
+  <rect x="150" y="302" width="250.4730983302412" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="408.4730983302412" y="315" font-size="12" fill="#64748b" font-weight="600">403</text>
+  <text x="140" y="347" text-anchor="end" font-size="12.5" fill="#1e293b" >TB-500</text>
+  <rect x="150" y="334" width="182.72727272727272" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="340.72727272727275" y="347" font-size="12" fill="#64748b" font-weight="600">294</text>
+  <text x="140" y="379" text-anchor="end" font-size="12.5" fill="#1e293b" >CJC-1295</text>
+  <rect x="150" y="366" width="180.24118738404454" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="338.24118738404457" y="379" font-size="12" fill="#64748b" font-weight="600">290</text>
+  <text x="140" y="411" text-anchor="end" font-size="12.5" fill="#1e293b" >Ipamorelin</text>
+  <rect x="150" y="398" width="139.84230055658628" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="297.8423005565863" y="411" font-size="12" fill="#64748b" font-weight="600">225</text>
+  <text x="140" y="443" text-anchor="end" font-size="12.5" fill="#1e293b" >BPC-157</text>
+  <rect x="150" y="430" width="123.68274582560296" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="281.682745825603" y="443" font-size="12" fill="#64748b" font-weight="600">199</text>
+  <text x="140" y="475" text-anchor="end" font-size="12.5" fill="#1e293b" >Epitalon</text>
+  <rect x="150" y="462" width="118.08905380333951" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="276.08905380333954" y="475" font-size="12" fill="#64748b" font-weight="600">190</text>
+  <text x="140" y="507" text-anchor="end" font-size="12.5" fill="#1e293b" >AOD-9604</text>
+  <rect x="150" y="494" width="108.14471243042672" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="266.1447124304267" y="507" font-size="12" fill="#64748b" font-weight="600">174</text>
+  <text x="140" y="539" text-anchor="end" font-size="12.5" fill="#1e293b" >Semax</text>
+  <rect x="150" y="526" width="87.01298701298701" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="245.01298701298703" y="539" font-size="12" fill="#64748b" font-weight="600">140</text>
+  <text x="140" y="571" text-anchor="end" font-size="12.5" fill="#1e293b" >HGH-176-191</text>
+  <rect x="150" y="558" width="85.76994434137292" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="243.76994434137293" y="571" font-size="12" fill="#64748b" font-weight="600">138</text>
+  <text x="140" y="603" text-anchor="end" font-size="12.5" fill="#1e293b" >PT-141</text>
+  <rect x="150" y="590" width="72.71799628942486" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="230.71799628942486" y="603" font-size="12" fill="#64748b" font-weight="600">117</text>
+  <text x="140" y="635" text-anchor="end" font-size="12.5" fill="#1e293b" >Hexarelin</text>
+  <rect x="150" y="622" width="58.4230055658627" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="216.4230055658627" y="635" font-size="12" fill="#64748b" font-weight="600">94</text>
+  <text x="140" y="667" text-anchor="end" font-size="12.5" fill="#1e293b" >Melanotan-2</text>
+  <rect x="150" y="654" width="47.2356215213358" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="205.23562152133582" y="667" font-size="12" fill="#64748b" font-weight="600">76</text>
+  <text x="140" y="699" text-anchor="end" font-size="12.5" fill="#1e293b" >GHRP-2</text>
+  <rect x="150" y="686" width="42.26345083487941" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="200.2634508348794" y="699" font-size="12" fill="#64748b" font-weight="600">68</text>
+  <text x="140" y="731" text-anchor="end" font-size="12.5" fill="#1e293b" >GHRP-6</text>
+  <rect x="150" y="718" width="42.26345083487941" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="200.2634508348794" y="731" font-size="12" fill="#64748b" font-weight="600">68</text>
+  <text x="140" y="763" text-anchor="end" font-size="12.5" fill="#1e293b" >5-Amino-1MQ</text>
+  <rect x="150" y="750" width="24.239332096474953" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="182.23933209647495" y="763" font-size="12" fill="#64748b" font-weight="600">39</text>
+  <text x="140" y="795" text-anchor="end" font-size="12.5" fill="#1e293b" >GHK-Cu</text>
+  <rect x="150" y="782" width="24.239332096474953" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="182.23933209647495" y="795" font-size="12" fill="#64748b" font-weight="600">39</text>
+  <text x="140" y="827" text-anchor="end" font-size="12.5" fill="#1e293b" >Nad+</text>
+  <rect x="150" y="814" width="21.131725417439704" height="18" rx="3" fill="#2f8f80" opacity="0.8"/>
+  <text x="179.1317254174397" y="827" font-size="12" fill="#64748b" font-weight="600">34</text>
+  <text x="140" y="882" font-size="12" fill="#64748b">Data: peps.co.ua · CC-BY-4.0 · DOI 10.5281/zenodo.21957084</text>
+</svg>

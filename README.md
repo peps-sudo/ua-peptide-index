@@ -3,6 +3,10 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21957084.svg)](https://doi.org/10.5281/zenodo.21957084)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+[![Ukraine Peptide Price Index — current snapshot](preview.svg)](https://peps.co.ua/price-index)
+
+*Median UAH/mg by molecule — click for the live, interactive index at peps.co.ua.*
+
 **The open dataset of research-grade peptide prices on the Ukrainian market, in UAH per milligram.**
 Compiled from public storefront listings aggregated by [peps.co.ua](https://peps.co.ua) and released
 under **CC-BY-4.0** — free to reuse with attribution.
