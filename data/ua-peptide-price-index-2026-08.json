@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "dataset": "Ukraine Peptide Price Index",
+    "description": "Відкритий індекс цін research-grade пептидів в Україні, грн за 1 мг. Медіана і мінімум по магазинах.",
+    "period": "2026-08",
+    "generated_utc": "2026-08-14T23:53:38.538Z",
+    "source": "https://peps.co.ua",
+    "methodology": "data/price-index/METHODOLOGY.md",
+    "license": "CC-BY-4.0",
+    "unit": "UAH per mg",
+    "currency": "UAH",
+    "registered_drugs_excluded": true,
+    "disclaimer": "Ціни зібрані з публічних вітрин магазинів. Лише research-grade; зареєстровані ЛЗ (пени) виключені. Не медична порада, не реклама ЛЗ. Жодних вигаданих цифр — усе з реальних вітрин.",
+    "rows_source": 699,
+    "rows_kept": 564,
+    "rows_dropped": {
+      "kind": 35,
+      "stock": 29,
+      "price": 0,
+      "blend": 2,
+      "onRequest": 28,
+      "registered": 41
+    },
+    "peptides": 23,
+    "index_rows": 52
+  },
+  "data": [
+    {
+      "peptide": "5-amino-1mq",
+      "dose_mg": 100,
+      "shops": 4,
+      "offers": 4,
+      "min_uah_per_mg": 29,
+      "median_uah_per_mg": 39,
+      "max_uah_per_mg": 40
+    },
+    {
+      "peptide": "aod-9604",
+      "dose_mg": 5,
+      "shops": 3,
+      "offers": 3,
+      "min_uah_per_mg": 140,
+      "median_uah_per_mg": 249,
+      "max_uah_per_mg": 249
+    },
+    {
+      "peptide": "bpc-157",
+      "dose_mg": 5,
+      "shops": 18,
+      "offers": 24,
+      "min_uah_per_mg": 155,
+      "median_uah_per_mg": 209,
+      "max_uah_per_mg": 282
+    },
+    {
+      "peptide": "bpc-157",
+      "dose_mg": 10,
+      "shops": 9,
+      "offers": 11,
+      "min_uah_per_mg": 156,
+      "median_uah_per_mg": 215,
+      "max_uah_per_mg": 600
+    },
+    {
+      "peptide": "cagrilintide",
+      "dose_mg": 10,
+      "shops": 4,
+      "offers": 4,
+      "min_uah_per_mg": 476,
+      "median_uah_per_mg": 606,
+      "max_uah_per_mg": 1250
+    },
+    {
+      "peptide": "cagrilintide",
+      "dose_mg": 20,
+      "shops": 9,
+      "offers": 9,
+      "min_uah_per_mg": 701,
+      "median_uah_per_mg": 825,
+      "max_uah_per_mg": 875
+    },
+    {
+      "peptide": "cjc-1295",
+      "dose_mg": 2,
+      "shops": 10,
+      "offers": 10,
+      "min_uah_per_mg": 170,
+      "median_uah_per_mg": 248,
+      "max_uah_per_mg": 509
+    },
+    {
+      "peptide": "cjc-1295",
+      "dose_mg": 5,
+      "shops": 8,
+      "offers": 7,
+      "min_uah_per_mg": 193,
+      "median_uah_per_mg": 324,
+      "max_uah_per_mg": 780
+    },
+    {
+      "peptide": "epitalon",
+      "dose_mg": 10,
+      "shops": 7,
+      "offers": 8,
+      "min_uah_per_mg": 120,
+      "median_uah_per_mg": 142,
+      "max_uah_per_mg": 197
+    },
+    {
+      "peptide": "epitalon",
+      "dose_mg": 20,
+      "shops": 13,
+      "offers": 15,
+      "min_uah_per_mg": 93,
+      "median_uah_per_mg": 180,
+      "max_uah_per_mg": 500
+    },
+    {
+      "peptide": "epitalon",
+      "dose_mg": 50,
+      "shops": 4,
+      "offers": 4,
+      "min_uah_per_mg": 60,
+      "median_uah_per_mg": 71,
+      "max_uah_per_mg": 104
+    },
+    {
+      "peptide": "ghk-cu",
+      "dose_mg": 50,
+      "shops": 5,
+      "offers": 5,
+      "min_uah_per_mg": 25,
+      "median_uah_per_mg": 30,
+      "max_uah_per_mg": 37
+    },
+    {
+      "peptide": "ghk-cu",
+      "dose_mg": 100,
+      "shops": 14,
+      "offers": 16,
+      "min_uah_per_mg": 37,
+      "median_uah_per_mg": 40,
+      "max_uah_per_mg": 95
+    },
+    {
+      "peptide": "ghrp-2",
+      "dose_mg": 5,
+      "shops": 11,
+      "offers": 13,
+      "min_uah_per_mg": 36,
+      "median_uah_per_mg": 68,
+      "max_uah_per_mg": 90
+    },
+    {
+      "peptide": "ghrp-2",
+      "dose_mg": 10,
+      "shops": 6,
+      "offers": 6,
+      "min_uah_per_mg": 58,
+      "median_uah_per_mg": 67,
+      "max_uah_per_mg": 69
+    },
+    {
+      "peptide": "ghrp-6",
+      "dose_mg": 5,
+      "shops": 13,
+      "offers": 14,
+      "min_uah_per_mg": 45,
+      "median_uah_per_mg": 68,
+      "max_uah_per_mg": 198
+    },
+    {
+      "peptide": "ghrp-6",
+      "dose_mg": 10,
+      "shops": 5,
+      "offers": 5,
+      "min_uah_per_mg": 58,
+      "median_uah_per_mg": 64,
+      "max_uah_per_mg": 69
+    },
+    {
+      "peptide": "hexarelin",
+      "dose_mg": 2,
+      "shops": 3,
+      "offers": 3,
+      "min_uah_per_mg": 345,
+      "median_uah_per_mg": 345,
+      "max_uah_per_mg": 345
+    },
+    {
+      "peptide": "hexarelin",
+      "dose_mg": 5,
+      "shops": 4,
+      "offers": 4,
+      "min_uah_per_mg": 92,
+      "median_uah_per_mg": 168,
+      "max_uah_per_mg": 260
+    },
+    {
+      "peptide": "hgh-176-191",
+      "dose_mg": 5,
+      "shops": 12,
+      "offers": 13,
+      "min_uah_per_mg": 116,
+      "median_uah_per_mg": 160,
+      "max_uah_per_mg": 290
+    },
+    {
+      "peptide": "ipamorelin",
+      "dose_mg": 5,
+      "shops": 11,
+      "offers": 13,
+      "min_uah_per_mg": 78,
+      "median_uah_per_mg": 134,
+      "max_uah_per_mg": 298
+    },
+    {
+      "peptide": "ipamorelin",
+      "dose_mg": 10,
+      "shops": 9,
+      "offers": 9,
+      "min_uah_per_mg": 200,
+      "median_uah_per_mg": 380,
+      "max_uah_per_mg": 980
+    },
+    {
+      "peptide": "melanotan-2",
+      "dose_mg": 10,
+      "shops": 11,
+      "offers": 8,
+      "min_uah_per_mg": 69,
+      "median_uah_per_mg": 76,
+      "max_uah_per_mg": 102
+    },
+    {
+      "peptide": "mots-c",
+      "dose_mg": 5,
+      "shops": 4,
+      "offers": 3,
+      "min_uah_per_mg": 270,
+      "median_uah_per_mg": 350,
+      "max_uah_per_mg": 376
+    },
+    {
+      "peptide": "mots-c",
+      "dose_mg": 10,
+      "shops": 15,
+      "offers": 15,
+      "min_uah_per_mg": 250,
+      "median_uah_per_mg": 430,
+      "max_uah_per_mg": 1100
+    },
+    {
+      "peptide": "mots-c",
+      "dose_mg": 20,
+      "shops": 11,
+      "offers": 12,
+      "min_uah_per_mg": 154,
+      "median_uah_per_mg": 421,
+      "max_uah_per_mg": 441
+    },
+    {
+      "peptide": "pt-141",
+      "dose_mg": 10,
+      "shops": 8,
+      "offers": 8,
+      "min_uah_per_mg": 72,
+      "median_uah_per_mg": 118,
+      "max_uah_per_mg": 385
+    },
+    {
+      "peptide": "retatrutide",
+      "dose_mg": 6,
+      "shops": 5,
+      "offers": 5,
+      "min_uah_per_mg": 800,
+      "median_uah_per_mg": 890,
+      "max_uah_per_mg": 1417
+    },
+    {
+      "peptide": "retatrutide",
+      "dose_mg": 10,
+      "shops": 8,
+      "offers": 9,
+      "min_uah_per_mg": 360,
+      "median_uah_per_mg": 700,
+      "max_uah_per_mg": 1700
+    },
+    {
+      "peptide": "retatrutide",
+      "dose_mg": 12,
+      "shops": 3,
+      "offers": 3,
+      "min_uah_per_mg": 742,
+      "median_uah_per_mg": 1258,
+      "max_uah_per_mg": 1258
+    },
+    {
+      "peptide": "retatrutide",
+      "dose_mg": 20,
+      "shops": 17,
+      "offers": 19,
+      "min_uah_per_mg": 300,
+      "median_uah_per_mg": 840,
+      "max_uah_per_mg": 895
+    },
+    {
+      "peptide": "retatrutide",
+      "dose_mg": 30,
+      "shops": 5,
+      "offers": 6,
+      "min_uah_per_mg": 360,
+      "median_uah_per_mg": 475,
+      "max_uah_per_mg": 660
+    },
+    {
+      "peptide": "retatrutide",
+      "dose_mg": 40,
+      "shops": 8,
+      "offers": 9,
+      "min_uah_per_mg": 313,
+      "median_uah_per_mg": 388,
+      "max_uah_per_mg": 500
+    },
+    {
+      "peptide": "selank",
+      "dose_mg": 10,
+      "shops": 7,
+      "offers": 5,
+      "min_uah_per_mg": 385,
+      "median_uah_per_mg": 385,
+      "max_uah_per_mg": 1050
+    },
+    {
+      "peptide": "semaglutide",
+      "dose_mg": 2,
+      "shops": 4,
+      "offers": 4,
+      "min_uah_per_mg": 742,
+      "median_uah_per_mg": 1250,
+      "max_uah_per_mg": 1250
+    },
+    {
+      "peptide": "semaglutide",
+      "dose_mg": 5,
+      "shops": 17,
+      "offers": 23,
+      "min_uah_per_mg": 450,
+      "median_uah_per_mg": 1300,
+      "max_uah_per_mg": 1870
+    },
+    {
+      "peptide": "semaglutide",
+      "dose_mg": 6,
+      "shops": 3,
+      "offers": 3,
+      "min_uah_per_mg": 890,
+      "median_uah_per_mg": 1350,
+      "max_uah_per_mg": 1583
+    },
+    {
+      "peptide": "semax",
+      "dose_mg": 30,
+      "shops": 7,
+      "offers": 5,
+      "min_uah_per_mg": 133,
+      "median_uah_per_mg": 140,
+      "max_uah_per_mg": 317
+    },
+    {
+      "peptide": "sermorelin",
+      "dose_mg": 5,
+      "shops": 3,
+      "offers": 2,
+      "min_uah_per_mg": 1260,
+      "median_uah_per_mg": 1260,
+      "max_uah_per_mg": 1260
+    },
+    {
+      "peptide": "tb-500",
+      "dose_mg": 2,
+      "shops": 10,
+      "offers": 10,
+      "min_uah_per_mg": 270,
+      "median_uah_per_mg": 310,
+      "max_uah_per_mg": 398
+    },
+    {
+      "peptide": "tb-500",
+      "dose_mg": 5,
+      "shops": 12,
+      "offers": 12,
+      "min_uah_per_mg": 213,
+      "median_uah_per_mg": 295,
+      "max_uah_per_mg": 880
+    },
+    {
+      "peptide": "tb-500",
+      "dose_mg": 10,
+      "shops": 4,
+      "offers": 4,
+      "min_uah_per_mg": 231,
+      "median_uah_per_mg": 355,
+      "max_uah_per_mg": 680
+    },
+    {
+      "peptide": "tesamorelin",
+      "dose_mg": 10,
+      "shops": 3,
+      "offers": 3,
+      "min_uah_per_mg": 560,
+      "median_uah_per_mg": 900,
+      "max_uah_per_mg": 1300
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 2.5,
+      "shops": 6,
+      "offers": 4,
+      "min_uah_per_mg": 480,
+      "median_uah_per_mg": 700,
+      "max_uah_per_mg": 800
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 5,
+      "shops": 14,
+      "offers": 13,
+      "min_uah_per_mg": 400,
+      "median_uah_per_mg": 560,
+      "max_uah_per_mg": 1098
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 7.5,
+      "shops": 6,
+      "offers": 6,
+      "min_uah_per_mg": 400,
+      "median_uah_per_mg": 467,
+      "max_uah_per_mg": 623
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 10,
+      "shops": 8,
+      "offers": 9,
+      "min_uah_per_mg": 400,
+      "median_uah_per_mg": 1090,
+      "max_uah_per_mg": 2360
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 15,
+      "shops": 14,
+      "offers": 16,
+      "min_uah_per_mg": 406,
+      "median_uah_per_mg": 850,
+      "max_uah_per_mg": 1933
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 20,
+      "shops": 13,
+      "offers": 13,
+      "min_uah_per_mg": 275,
+      "median_uah_per_mg": 732,
+      "max_uah_per_mg": 900
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 30,
+      "shops": 6,
+      "offers": 7,
+      "min_uah_per_mg": 333,
+      "median_uah_per_mg": 467,
+      "max_uah_per_mg": 833
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 40,
+      "shops": 5,
+      "offers": 7,
+      "min_uah_per_mg": 233,
+      "median_uah_per_mg": 388,
+      "max_uah_per_mg": 800
+    },
+    {
+      "peptide": "tirzepatide",
+      "dose_mg": 60,
+      "shops": 6,
+      "offers": 7,
+      "min_uah_per_mg": 233,
+      "median_uah_per_mg": 300,
+      "max_uah_per_mg": 700
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Ukraine Peptide Price Index"
+abstract: >-
+  Open dataset of research-grade peptide prices on the Ukrainian market,
+  in UAH per milligram, compiled from public storefront listings aggregated
+  by peps.co.ua. Registered medicines (GLP-1 pens) are excluded. Prices are
+  observed from real storefronts; no invented or estimated figures.
+type: dataset
+authors:
+  - name: "peps.co.ua"
+    website: "https://peps.co.ua"
+version: "2026.08"
+date-released: "2026-08-15"
+license: CC-BY-4.0
+url: "https://peps.co.ua/price-index"
+repository-code: "https://github.com/peps-sudo/ua-peptide-index"
+keywords:
+  - peptides
+  - price index
+  - Ukraine
+  - open data
+  - research-grade
+# doi: 10.5281/zenodo.XXXXXXX   # filled in after the first Zenodo release
