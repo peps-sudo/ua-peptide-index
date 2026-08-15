@@ -11,8 +11,9 @@
 Compiled from public storefront listings aggregated by [peps.co.ua](https://peps.co.ua) and released
 under **CC-BY-4.0** — free to reuse with attribution.
 
-No other open source tracks peptide prices across the Ukrainian market. This is original,
-reproducible research data: real prices from real storefronts, never invented or estimated figures.
+No other open source tracks peptide prices across the Ukrainian market. This is original research
+data derived exclusively from observed storefront prices — no invented figures (the published
+percentiles are computed from those observations, not estimated by hand).
 
 > ⚠️ This is **not medical advice** and **not advertising of medicinal products**. The dataset
 > covers research-grade compounds only; registered medicines (GLP-1 pens such as Mounjaro, Ozempic,
@@ -37,14 +38,21 @@ shop's cheapest UAH/mg), then `p25` / `median` / `p75` **across shops**; a day i
 **≥2 shops**. Both files derive from one v2 source (one method). Only in-stock, research-grade
 listings enter the index; per-dose breakdown is temporarily withheld until its method is aligned.
 
+Each snapshot row carries a **`validation_status`**: `benchmarked` (bias reduction confirmed —
+tirzepatide, retatrutide) or `unvalidated` (preliminary — the other 22). With few shops the
+percentiles degenerate (e.g. a 3-shop molecule can show `median == p75`); treat low-`suppliers`
+rows as indicative only. `as_of` is the snapshot date, not necessarily each shop's last-observed
+date (carry-forward is possible).
+
 ## How to cite
 
 > *Ukraine Peptide Price Index* (v2, alpha) [Data set]. peps.co.ua, 2026.
-> CC-BY-4.0. https://doi.org/10.5281/zenodo.21957083
+> CC-BY-4.0. https://doi.org/10.5281/zenodo.21959160
 
-DOI (all versions): [**10.5281/zenodo.21957083**](https://doi.org/10.5281/zenodo.21957083).
-A [`CITATION.cff`](CITATION.cff) file is included, so GitHub's **“Cite this repository”** button
-produces APA / BibTeX automatically.
+- **Reproducible citation** (pins this exact release): version DOI [**10.5281/zenodo.21959160**](https://doi.org/10.5281/zenodo.21959160) — this is what [`CITATION.cff`](CITATION.cff) carries.
+- **Always-latest** (resolves to the newest version): concept DOI [**10.5281/zenodo.21957083**](https://doi.org/10.5281/zenodo.21957083).
+
+GitHub's **“Cite this repository”** button produces APA / BibTeX from `CITATION.cff` automatically.
 
 ## Why this exists
 
