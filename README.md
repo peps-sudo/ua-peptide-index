@@ -1,6 +1,6 @@
 # Ukraine Peptide Price Index
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21957084.svg)](https://doi.org/10.5281/zenodo.21957084)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21957083.svg)](https://doi.org/10.5281/zenodo.21957083)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 [![Ukraine Peptide Price Index — current snapshot](preview.svg)](https://peps.co.ua/price-index)
@@ -40,9 +40,9 @@ listings enter the index; per-dose breakdown is temporarily withheld until its m
 ## How to cite
 
 > *Ukraine Peptide Price Index* (v2, alpha) [Data set]. peps.co.ua, 2026.
-> CC-BY-4.0. https://doi.org/10.5281/zenodo.21957084
+> CC-BY-4.0. https://doi.org/10.5281/zenodo.21957083
 
-DOI (all versions): [**10.5281/zenodo.21957084**](https://doi.org/10.5281/zenodo.21957084).
+DOI (all versions): [**10.5281/zenodo.21957083**](https://doi.org/10.5281/zenodo.21957083).
 A [`CITATION.cff`](CITATION.cff) file is included, so GitHub's **“Cite this repository”** button
 produces APA / BibTeX automatically.
 
