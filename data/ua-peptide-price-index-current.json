@@ -1,238 +1,356 @@
 {
   "meta": {
-    "dataset": "Ukraine Peptide Price Index — current snapshot",
-    "description": "Останній відомий стан по кожній молекулі. Значення = медіана серед магазинів; ціна магазину = його найдешевша грн/мг. Alpha.",
-    "as_of": "2026-08-15",
-    "as_of_note": "as_of — дата зрізу історії, не обовʼязково дата останнього спостереження кожного магазину (можливий carry-forward).",
-    "generated_from": "ua-peptide-price-history-weekly.json",
-    "source": "https://peps.co.ua",
-    "license": "CC-BY-4.0",
+    "dataset": "Ukraine Peptide Price Index — current snapshot (per-supplier state)",
     "unit": "UAH per mg",
     "currency": "UAH",
+    "stat": "p25 / median / p75 across suppliers",
     "measure": "min price/mg per supplier (cheapest dose)",
-    "aggregate": "p25 / median / p75 across suppliers",
-    "method": "per-supplier daily state, carry-forward, in_stock tombstone",
-    "quantile_method": "linear interpolation (p25/median/p75); низьке suppliers → квантилі вироджуються",
+    "source": "https://peps.co.ua",
+    "license": "CC-BY-4.0",
+    "methodology": "https://peps.co.ua/price-index",
+    "quantile_method": "linear interpolation, (n-1)*q, Hyndman-Fan type 7 (numpy/pandas default)",
     "registered_drugs_excluded": true,
-    "validation": "benchmarked = зниження зміщення підтверджено (tirzepatide, retatrutide); unvalidated = попередньо (22 з 24). Див. validation_status у рядках і METHODOLOGY.md",
-    "peptides": 24
+    "solvents_excluded": [
+      "bac-water"
+    ],
+    "granularity": "current snapshot",
+    "method": "per-supplier daily state, carry-forward, in_stock tombstone, freshness-gated liveness",
+    "liveness_stale_days": 14,
+    "plausibility_bands": {
+      "5-amino-1mq": [
+        20,
+        8000
+      ],
+      "aod-9604": [
+        20,
+        8000
+      ],
+      "bpc-157": [
+        50,
+        8000
+      ],
+      "cagrilintide": [
+        20,
+        8000
+      ],
+      "cjc-1295": [
+        50,
+        3000
+      ],
+      "epitalon": [
+        20,
+        8000
+      ],
+      "ghk-cu": [
+        20,
+        1000
+      ],
+      "ghrp-2": [
+        20,
+        8000
+      ],
+      "ghrp-6": [
+        20,
+        8000
+      ],
+      "hexarelin": [
+        20,
+        8000
+      ],
+      "hgh-176-191": [
+        20,
+        8000
+      ],
+      "ipamorelin": [
+        50,
+        3000
+      ],
+      "melanotan-2": [
+        20,
+        8000
+      ],
+      "mots-c": [
+        20,
+        8000
+      ],
+      "nad-plus": [
+        20,
+        8000
+      ],
+      "pt-141": [
+        20,
+        8000
+      ],
+      "retatrutide": [
+        200,
+        8000
+      ],
+      "selank": [
+        20,
+        8000
+      ],
+      "semaglutide": [
+        300,
+        8000
+      ],
+      "semax": [
+        20,
+        8000
+      ],
+      "sermorelin": [
+        20,
+        8000
+      ],
+      "tb-500": [
+        100,
+        3000
+      ],
+      "tesamorelin": [
+        20,
+        8000
+      ],
+      "tirzepatide": [
+        200,
+        8000
+      ]
+    },
+    "generated_utc": "2026-08-16T10:22:28.346Z",
+    "peptides": 24,
+    "rows": 24,
+    "note": "Одна ціна на магазин на день (стан, не події). Живий сьогодні = є в каталозі, status=active І last_success ≤ 14 дн → ціна тягнеться до сьогодні; застарілий/вимкнений скрап — лише до дати last_success (востаннє підтверджений живим), далі ні. Розчинники (bac-water) та зареєстровані ЛЗ виключені. Ціна = мінімум грн/мг магазину.",
+    "as_of": "2026-08-16",
+    "as_of_tz": "UTC",
+    "validation": {
+      "field": "validation_status",
+      "ok": "≥5 постачальників — перцентиль стійкий",
+      "limited": "2–4 постачальники — тонка вибірка, p25/p75 можуть збігатися",
+      "not_published": "<2 постачальники — не публікуємо (MIN_OBS=2)"
+    },
+    "counts": {
+      "source_events": 18082,
+      "dropped_registered_and_solvent": 805,
+      "dropped_out_of_band": 9,
+      "shop_days_emitted": 13574,
+      "mg_fallback_pairs": 39,
+      "live_shops_today": 44
+    }
   },
   "data": [
     {
-      "peptide": "sermorelin",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 3,
-      "p25": 765,
-      "median": 1260,
-      "p75": 1260
-    },
-    {
-      "peptide": "semaglutide",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 18,
-      "p25": 864,
-      "median": 1192,
-      "p75": 1386
-    },
-    {
-      "peptide": "cagrilintide",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 10,
-      "p25": 663,
-      "median": 780,
-      "p75": 825
-    },
-    {
-      "peptide": "retatrutide",
-      "validation_status": "benchmarked",
-      "as_of": "2026-08-15",
-      "suppliers": 28,
-      "p25": 371,
-      "median": 625,
-      "p75": 775
-    },
-    {
-      "peptide": "tesamorelin",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 3,
-      "p25": 590,
-      "median": 620,
-      "p75": 960
-    },
-    {
-      "peptide": "tirzepatide",
-      "validation_status": "benchmarked",
-      "as_of": "2026-08-15",
-      "suppliers": 37,
-      "p25": 406,
-      "median": 533,
-      "p75": 732
-    },
-    {
-      "peptide": "bpc-157",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 19,
-      "p25": 182,
-      "median": 520,
-      "p75": 740
-    },
-    {
-      "peptide": "mots-c",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 23,
-      "p25": 325,
-      "median": 420,
-      "p75": 436
-    },
-    {
-      "peptide": "selank",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 6,
-      "p25": 372,
-      "median": 385,
-      "p75": 385
-    },
-    {
-      "peptide": "pt-141",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 7,
-      "p25": 117,
-      "median": 370,
-      "p75": 383
-    },
-    {
-      "peptide": "tb-500",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 19,
-      "p25": 274,
-      "median": 290,
-      "p75": 666
-    },
-    {
-      "peptide": "cjc-1295",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 18,
-      "p25": 230,
-      "median": 288,
-      "p75": 451
-    },
-    {
-      "peptide": "ipamorelin",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 19,
-      "p25": 116,
-      "median": 225,
-      "p75": 375
+      "peptide": "5-amino-1mq",
+      "validation_status": "limited",
+      "as_of": "2026-08-16",
+      "suppliers": 4,
+      "p25_uah_per_mg": 34,
+      "median_uah_per_mg": 39,
+      "p75_uah_per_mg": 40
     },
     {
       "peptide": "aod-9604",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 4,
-      "p25": 175,
-      "median": 218,
-      "p75": 267
+      "validation_status": "limited",
+      "as_of": "2026-08-16",
+      "suppliers": 3,
+      "p25_uah_per_mg": 164,
+      "median_uah_per_mg": 187,
+      "p75_uah_per_mg": 254
     },
     {
-      "peptide": "hexarelin",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 5,
-      "p25": 95,
-      "median": 206,
-      "p75": 240
+      "peptide": "bpc-157",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 18,
+      "p25_uah_per_mg": 179,
+      "median_uah_per_mg": 485,
+      "p75_uah_per_mg": 740
     },
     {
-      "peptide": "hgh-176-191",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 11,
-      "p25": 142,
-      "median": 198,
-      "p75": 640
+      "peptide": "cagrilintide",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 10,
+      "p25_uah_per_mg": 663,
+      "median_uah_per_mg": 780,
+      "p75_uah_per_mg": 825
+    },
+    {
+      "peptide": "cjc-1295",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 17,
+      "p25_uah_per_mg": 230,
+      "median_uah_per_mg": 320,
+      "p75_uah_per_mg": 458
     },
     {
       "peptide": "epitalon",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
       "suppliers": 18,
-      "p25": 106,
-      "median": 185,
-      "p75": 200
-    },
-    {
-      "peptide": "semax",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 6,
-      "p25": 135,
-      "median": 140,
-      "p75": 140
-    },
-    {
-      "peptide": "melanotan-2",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 10,
-      "p25": 73,
-      "median": 97,
-      "p75": 350
-    },
-    {
-      "peptide": "ghrp-2",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 11,
-      "p25": 62,
-      "median": 67,
-      "p75": 84
-    },
-    {
-      "peptide": "ghrp-6",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 13,
-      "p25": 62,
-      "median": 67,
-      "p75": 198
+      "p25_uah_per_mg": 106,
+      "median_uah_per_mg": 185,
+      "p75_uah_per_mg": 200
     },
     {
       "peptide": "ghk-cu",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
       "suppliers": 20,
-      "p25": 37,
-      "median": 40,
-      "p75": 42
+      "p25_uah_per_mg": 37,
+      "median_uah_per_mg": 40,
+      "p75_uah_per_mg": 42
     },
     {
-      "peptide": "5-amino-1mq",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
+      "peptide": "ghrp-2",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 10,
+      "p25_uah_per_mg": 63,
+      "median_uah_per_mg": 68,
+      "p75_uah_per_mg": 87
+    },
+    {
+      "peptide": "ghrp-6",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 12,
+      "p25_uah_per_mg": 64,
+      "median_uah_per_mg": 69,
+      "p75_uah_per_mg": 210
+    },
+    {
+      "peptide": "hexarelin",
+      "validation_status": "limited",
+      "as_of": "2026-08-16",
       "suppliers": 4,
-      "p25": 34,
-      "median": 39,
-      "p75": 40
+      "p25_uah_per_mg": 94,
+      "median_uah_per_mg": 151,
+      "p75_uah_per_mg": 215
+    },
+    {
+      "peptide": "hgh-176-191",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 10,
+      "p25_uah_per_mg": 140,
+      "median_uah_per_mg": 244,
+      "p75_uah_per_mg": 640
+    },
+    {
+      "peptide": "ipamorelin",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 18,
+      "p25_uah_per_mg": 116,
+      "median_uah_per_mg": 225,
+      "p75_uah_per_mg": 378
+    },
+    {
+      "peptide": "melanotan-2",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 10,
+      "p25_uah_per_mg": 73,
+      "median_uah_per_mg": 97,
+      "p75_uah_per_mg": 350
+    },
+    {
+      "peptide": "mots-c",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 21,
+      "p25_uah_per_mg": 333,
+      "median_uah_per_mg": 420,
+      "p75_uah_per_mg": 441
     },
     {
       "peptide": "nad-plus",
-      "validation_status": "unvalidated",
-      "as_of": "2026-08-15",
-      "suppliers": 4,
-      "p25": 28,
-      "median": 34,
-      "p75": 39
+      "validation_status": "limited",
+      "as_of": "2026-08-16",
+      "suppliers": 3,
+      "p25_uah_per_mg": 27,
+      "median_uah_per_mg": 29,
+      "p75_uah_per_mg": 34
+    },
+    {
+      "peptide": "pt-141",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 7,
+      "p25_uah_per_mg": 117,
+      "median_uah_per_mg": 370,
+      "p75_uah_per_mg": 383
+    },
+    {
+      "peptide": "retatrutide",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 25,
+      "p25_uah_per_mg": 375,
+      "median_uah_per_mg": 590,
+      "p75_uah_per_mg": 750
+    },
+    {
+      "peptide": "selank",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 6,
+      "p25_uah_per_mg": 372,
+      "median_uah_per_mg": 385,
+      "p75_uah_per_mg": 385
+    },
+    {
+      "peptide": "semaglutide",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 18,
+      "p25_uah_per_mg": 883,
+      "median_uah_per_mg": 1305,
+      "p75_uah_per_mg": 1525
+    },
+    {
+      "peptide": "semax",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 6,
+      "p25_uah_per_mg": 135,
+      "median_uah_per_mg": 140,
+      "p75_uah_per_mg": 140
+    },
+    {
+      "peptide": "sermorelin",
+      "validation_status": "limited",
+      "as_of": "2026-08-16",
+      "suppliers": 3,
+      "p25_uah_per_mg": 765,
+      "median_uah_per_mg": 1260,
+      "p75_uah_per_mg": 1260
+    },
+    {
+      "peptide": "tb-500",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 19,
+      "p25_uah_per_mg": 274,
+      "median_uah_per_mg": 290,
+      "p75_uah_per_mg": 666
+    },
+    {
+      "peptide": "tesamorelin",
+      "validation_status": "limited",
+      "as_of": "2026-08-16",
+      "suppliers": 3,
+      "p25_uah_per_mg": 590,
+      "median_uah_per_mg": 620,
+      "p75_uah_per_mg": 960
+    },
+    {
+      "peptide": "tirzepatide",
+      "validation_status": "ok",
+      "as_of": "2026-08-16",
+      "suppliers": 33,
+      "p25_uah_per_mg": 400,
+      "median_uah_per_mg": 472,
+      "p75_uah_per_mg": 710
     }
   ]
 }
