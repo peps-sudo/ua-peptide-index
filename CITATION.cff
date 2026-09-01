@@ -10,8 +10,8 @@ type: dataset
 authors:
   - name: "peps.co.ua"
     website: "https://peps.co.ua"
-version: "2026.08.2-alpha"
-date-released: "2026-08-16"
+version: "2026.09.1-beta"
+date-released: "2026-09-01"
 doi: "10.5281/zenodo.21957083"
 license: CC-BY-4.0
 url: "https://peps.co.ua/price-index"
